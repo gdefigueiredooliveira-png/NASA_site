@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 .conteudo-home {
-    width: 100%;             /* Ocupa toda a largura da tela */
-    display: block;          /* Muda de inline-block para block */
+    width: 100%;           
+    display: block;         
     text-align: center;
 }
 
 .conteudo-home h1 {
     width: 100%;
-    min-height: 450px; /* Define uma altura mínima para o banner */
+    min-height: 450px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,12 +26,12 @@
 }
 
 .conteudo-home p{
-    max-width: 800px;        /* Evita que as linhas fiquem longas demais */
-    margin: 40px auto;       /* Centraliza o bloco na página */
-    line-height: 1.8;        /* Aumenta o espaço entre as linhas */
-    font-size: 18px;         /* Tamanho confortável para leitura */
-    color: #e0e0e0;          /* Um cinza claro em vez de branco puro agride menos os olhos */
-    text-align: justify;     /* Ou left, se preferir o texto alinhado à esquerda */
+    max-width: 800px;       
+    margin: 40px auto;       
+    line-height: 1.8;       
+    font-size: 18px;        
+    color: #e0e0e0;          
+    text-align: justify;     
 }
 h1{
     color: white;

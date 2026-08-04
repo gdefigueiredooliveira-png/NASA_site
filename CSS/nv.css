@@ -39,16 +39,19 @@ nav ul li a:hover{
 body{
     background-color: #0B0D17;
 }
-.inicio h1{
-    margin-top: 25px;
-    font-size: 45px;
-    background-image: url(../IMG/galaxia.jpg);
-    padding: 250px 50px;
-    background-size: 100%;
-
-}
-h1{
-    color: white;
+.Inicio h1 {
+    width: 100%;
+    min-height: 450px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 52px;
+    font-weight: bold;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../IMG/galaxia.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 footer {
     text-align: center;
