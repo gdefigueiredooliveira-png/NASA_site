@@ -40,5 +40,21 @@ body{
     background-color: #0B0D17;
 }
 .inicio h1{
-color: white;
+    margin-top: 25px;
+    font-size: 45px;
+    background-image: url(../IMG/galaxia.jpg);
+    padding: 250px 50px;
+    background-size: 100%;
+
+}
+h1{
+    color: white;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #07080f;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #718096;
+    font-size: 14px;
 }

@@ -4,27 +4,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-.conteudo-home{
-    text-align: left;
-    color: white;
-    display: inline-block;
+.conteudo-home {
+    width: 100%;             /* Ocupa toda a largura da tela */
+    display: block;          /* Muda de inline-block para block */
+    text-align: center;
 }
 
-.conteudo-home h1{
-    margin-top: 25px;
-    font-size: 45px;
-    background-image: url(../IMG/fundo_home.jpg);
-    padding: 400px 50px;
-    background-size: 100%;
-
+.conteudo-home h1 {
+    width: 100%;
+    min-height: 450px; /* Define uma altura mínima para o banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 52px;
+    font-weight: bold;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../IMG/fundo_home.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 
 .conteudo-home p{
-    display: block;
-    margin: 15px auto;
-    width: 70%;
-    font-size: 20px;
-    line-height: 1.5;
+    max-width: 800px;        /* Evita que as linhas fiquem longas demais */
+    margin: 40px auto;       /* Centraliza o bloco na página */
+    line-height: 1.8;        /* Aumenta o espaço entre as linhas */
+    font-size: 18px;         /* Tamanho confortável para leitura */
+    color: #e0e0e0;          /* Um cinza claro em vez de branco puro agride menos os olhos */
+    text-align: justify;     /* Ou left, se preferir o texto alinhado à esquerda */
 }
 h1{
     color: white;
@@ -36,18 +43,7 @@ h1{
     color: #ffffff;
     text-align: center;
 }
-nav{
-    background-color: #0B0D17;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    border-bottom: 2px solid #1B3B6F;
-}
-.logo{
-    width: 70px;
-    cursor: pointer;
-}
+
 nav ul{
     list-style: none;
     display: flex;
@@ -67,6 +63,149 @@ nav ul li a:hover{
     background-color: #2D6CDF;
     color: white;
 }
-body{
-    background-color: #0B0D17;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px; /* O padding de 40px dá um respiro sem tirar a logo do canto */
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 80px; /* Ajuste o tamanho da logo conforme necessário */
+    cursor: pointer;
+}
+/* Card container para o texto */
+/* 1. Estrutura geral da página */
+body {
+    background-color: #0b0d17;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* 4. Card do texto posicionado abaixo do banner */
+.card-texto {
+    max-width: 900px;
+    margin: 40px auto 60px auto; /* Margem positiva de 40px para afastar do banner sem subir */
+    padding: 40px;
+    background-color: rgba(20, 24, 40, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.card-texto p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #e2e8f0;
+    text-align: justify;
+    margin: 0;
+}
+/* --- Títulos da Seção --- */
+.titulo-secao {
+    text-align: center;
+    font-size: 32px;
+    margin: 50px 0 30px 0;
+    color: #ffffff;
+}
+
+/* --- Seção de Estatísticas --- */
+.secao-numeros {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.dado {
+    text-align: center;
+}
+
+.dado h2 {
+    font-size: 40px;
+    color: #4b9cd3;
+    margin: 0;
+}
+
+.dado p {
+    font-size: 14px;
+    color: #a0aec0;
+    margin-top: 5px;
+}
+
+/* --- Grid de Cards Interativos --- */
+.grid-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.card-destaque {
+    background-color: rgba(20, 24, 40, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-destaque:hover {
+    transform: translateY(-8px);
+    border-color: #4b9cd3;
+}
+
+.card-destaque .icone {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-destaque h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card-destaque p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.btn-card {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #4b9cd3;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #2b7bb9;
+}
+
+/* --- Rodapé --- */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #07080f;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #718096;
+    font-size: 14px;
 }
