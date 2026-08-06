@@ -68,16 +68,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 40px; /* O padding de 40px dá um respiro sem tirar a logo do canto */
+    padding: 20px 40px; 
     box-sizing: border-box;
 }
 
 .logo {
-    width: 80px; /* Ajuste o tamanho da logo conforme necessário */
+    width: 80px; 
     cursor: pointer;
 }
-/* Card container para o texto */
-/* 1. Estrutura geral da página */
+
 body {
     background-color: #0b0d17;
     margin: 0;
@@ -86,10 +85,10 @@ body {
     color: #ffffff;
 }
 
-/* 4. Card do texto posicionado abaixo do banner */
+
 .card-texto {
     max-width: 900px;
-    margin: 40px auto 60px auto; /* Margem positiva de 40px para afastar do banner sem subir */
+    margin: 40px auto 60px auto; 
     padding: 40px;
     background-color: rgba(20, 24, 40, 0.85);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -105,7 +104,7 @@ body {
     text-align: justify;
     margin: 0;
 }
-/* --- Títulos da Seção --- */
+
 .titulo-secao {
     text-align: center;
     font-size: 32px;
@@ -113,7 +112,7 @@ body {
     color: #ffffff;
 }
 
-/* --- Seção de Estatísticas --- */
+
 .secao-numeros {
     display: flex;
     justify-content: center;
@@ -139,7 +138,7 @@ body {
     margin-top: 5px;
 }
 
-/* --- Grid de Cards Interativos --- */
+
 .grid-cards {
     display: flex;
     justify-content: center;
@@ -174,7 +173,7 @@ body {
 .card-destaque h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #4b9cd3;
 }
 
 .card-destaque p {
@@ -200,7 +199,7 @@ body {
     background-color: #2b7bb9;
 }
 
-/* --- Rodapé --- */
+
 footer {
     text-align: center;
     padding: 25px;

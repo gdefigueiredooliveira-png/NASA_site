@@ -61,3 +61,156 @@ footer {
     color: #718096;
     font-size: 14px;
 }
+
+
+.conteudo-novidades{
+    width:100%;
+    text-align:center;
+}
+
+.conteudo-novidades h1{
+    width:100%;
+    min-height:450px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:52px;
+    font-weight:bold;
+    color:#fff;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../IMG/fundo_novidades.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.noticias{
+    max-width:1200px;
+    margin:0 auto 70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.noticia{
+    width:320px;
+    background:rgba(20,24,40,.85);
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.noticia:hover{
+    transform:translateY(-8px);
+    border-color:#4b9cd3;
+}
+
+.noticia img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.noticia h2{
+    margin:20px;
+    color:#4b9cd3;
+    font-size:24px;
+}
+
+.noticia p{
+    margin:0 20px 20px;
+    color:#d1d5db;
+    line-height:1.6;
+    text-align:justify;
+}
+
+.btn-noticia{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:10px 20px;
+    background:#4b9cd3;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-noticia:hover{
+    background:#2d6cdf;
+}
+
+
+.conteudo-novidades{
+    width:100%;
+    display:block;
+    text-align:center;
+}
+
+.conteudo-novidades h1{
+    width:100%;
+    min-height:450px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:52px;
+    font-weight:bold;
+    color:white;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../IMG/galaxia.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+.card-texto {
+    max-width: 900px;
+    margin: 40px auto 60px auto; 
+    padding: 40px;
+    gap: 20px;
+    background-color: rgba(20, 24, 40, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.card-texto{
+    max-width:900px;
+    margin:50px auto;
+    padding:40px;
+    background:rgba(20,24,40,.85);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.card-texto p{
+    color:#d1d5db;
+    line-height:1.6;
+    text-align:justify;
+}
+
+.banner{
+     width: 100%;
+    min-height: 450px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 40px;
+    font-weight: bold;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../IMG/fundo_novidades.avif);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
